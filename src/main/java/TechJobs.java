@@ -121,10 +121,12 @@ public class TechJobs {
     private static void printJobs(ArrayList<HashMap<String, String>> someJobs) {
         //System.out.println("\n*****");
         if (someJobs.size() == 0) {
+            // used print instead of println (Same at line 130)
             System.out.print("No Results");
             return;
         } else {
             for (HashMap<String, String> aJob : someJobs) {
+                // Used New line characters to include required space
                 System.out.print( "\n*****\n");
                 for (Map.Entry<String, String> data: aJob.entrySet()) {
                     System.out.println(data.getKey() + ": " + data.getValue());
